@@ -116,6 +116,10 @@ section div img {
     margin: 1rem;
 }
 
+#mark-all {
+    cursor: pointer;
+}
+
 .attribution {
     border: 1px solid black;
     text-align: center;
