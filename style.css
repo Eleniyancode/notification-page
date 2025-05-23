@@ -25,15 +25,24 @@ body {
     font-family: 'MyFont';
     font-weight: normal;
     /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: hsl(211, 68%, 94%);
 }
 
 .container {
+    margin-top: 5rem;
     display: flex;
     /* border: 2px solid black; */
     padding: 2rem;
     flex-direction: column;
     gap: 3rem;
+    background-color: white;
     /* height: 95vh; */
+    border-radius: 10px;
 }
 
 .container header {
@@ -132,7 +141,7 @@ section div img {
     .container {
         max-width: 60rem;
         /* border: 2px solid brown; */
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .kimberly-p {
@@ -147,4 +156,79 @@ section div img {
     .kimberly-p img {
         display: inline-block;
     }
+}
+
+
+@keyframes title {
+    from {
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes read {
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes anime {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+header h3 {
+    animation: title 0.8s 0s forwards;
+}
+
+header p {
+    animation: read 0.8s 0s forwards;
+}
+
+.notif-1 {
+    animation: anime 0.8s 0s forwards;
+}
+
+.notif-2 {
+    animation: anime 0.8s 0.1s forwards;
+}
+
+.notif-3 {
+    animation: anime 0.8s 0.2s forwards;
+}
+
+.notif-4 {
+    animation: anime 0.8s 0.3s forwards;
+}
+
+.notif-5 {
+    animation: anime 0.8s 0.4s forwards;
+}
+
+.notif-6 {
+    animation: anime 0.8s 0.5s forwards;
+}
+
+.notif-7 {
+    animation: anime 0.8s 0.6s forwards;
 }
