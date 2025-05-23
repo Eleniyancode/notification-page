@@ -109,3 +109,38 @@ section div img {
     background-color: red;
     margin-left: 5px;
 }
+
+.private-message {
+    border: 1px solid hsl(210, 60%, 90%);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.attribution {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+@media (min-width: 600px) {
+    .container {
+        max-width: 60rem;
+        /* border: 2px solid brown; */
+        margin: 0 auto;
+    }
+
+    .kimberly-p {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid green; */
+        /* flex-grow: 2; */
+    }
+    
+    .kimberly-p img {
+        display: inline-block;
+    }
+}
