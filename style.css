@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(./assets/fonts/static/PlusJakartaSans-Medium.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'MyFont';
+    font-weight: normal;
+    /* height: 100vh; */
+}
+
+.container {
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+    /* height: 95vh; */
+}
+
+.container header {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header h3 {
+    font-size: 1.6rem;
+    color: hsl(224, 21%, 14%);
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+h3 span {
+    display: inline-block;
+    padding-block: .2rem;
+    padding-inline: 1rem;
+    color: white;
+    background-color: hsl(224, 21%, 14%);
+    border-radius: 4px;
+    font-size: 1.8rem;
+}
+
+header p {
+    color: hsl(219, 12%, 42%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    color: hsl(219, 12%, 42%);
+}
+
+.new-notification {
+    background-color: hsl(210, 60%, 98%);
+}
+
+section div img {
+    width: 3rem;
+}
+
+.name {
+    color: hsl(224, 21%, 14%);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.chess {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 5px;
+}
