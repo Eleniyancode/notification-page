@@ -75,24 +75,32 @@ header p {
     color: hsl(219, 12%, 42%);
 }
 
+header p:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+
 main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-section {
+.notification {
     /* border: 2px solid green; */
     display: flex;
     gap: 1rem;
     padding: 1rem;
     border-radius: 5px;
     color: hsl(219, 12%, 42%);
+    cursor: pointer;
 }
 
-.new-notification {
+.new {
     background-color: hsl(210, 60%, 98%);
+    cursor: pointer;
 }
+
 
 section div img {
     width: 3rem;
@@ -104,11 +112,18 @@ section div img {
     font-weight: bold;
 }
 
+.name:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
 .chess {
     color: blue;
     font-weight: bold;
     font-size: 1.2rem;
+    cursor: pointer;
 }
+
 
 .dot {
     display: inline-block;
@@ -123,6 +138,12 @@ section div img {
     border: 1px solid hsl(210, 60%, 90%);
     padding: 1rem;
     margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.private-message:hover {
+    background-color: hsl(211, 68%, 94%);
 }
 
 #mark-all {
